@@ -19,7 +19,7 @@ Les analyses sont faites en SQL, puis présentées dans un tableau de bord Power
 
 ## Données
 
-Source : *Brazilian E-Commerce Public Dataset by Olist*, publié par Olist sur Kaggle (https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce). Les 8 fichiers CSV utilisés sont dans le dossier `data/`, tels que téléchargés (non modifiés). Les données appartiennent à Olist : voir la licence indiquée sur la page Kaggle.
+Source : *Brazilian E-Commerce Public Dataset by Olist*, publié par Olist sur Kaggle (https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce). Les 8 fichiers CSV utilisés sont dans le dossier `data/`, tels que téléchargés (non modifiés). Les données appartiennent à Olist et sont distribuées sous licence CC BY-NC-SA 4.0 (voir la section « Licence et crédits » en fin de document).
 
 | Table | Lignes |
 |---|---|
@@ -189,3 +189,11 @@ olist-sql-analysis/
 2. Dans SQL Server, créer la base `olist` et importer les 8 fichiers avec *Importer un fichier plat...*.
 3. Exécuter la première partie de `sql/Code_SQL_Olist.sql` (import et nettoyage, rejouable sans erreur), puis les analyses une par une en sélectionnant la requête à lancer.
 4. Ouvrir `powerbi/AnalyseOlist.pbix` dans Power BI Desktop et mettre à jour la source (serveur `localhost\SQLEXPRESS`, base `olist`).
+
+## Licence et crédits
+
+Les données proviennent du *Brazilian E-Commerce Public Dataset by Olist*, publié par Olist sur Kaggle (https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) et distribué sous licence [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+- Les fichiers du dossier `data/` sont les fichiers d'origine, non modifiés.
+- Le fichier Power BI (`powerbi/AnalyseOlist.pbix`) contient une copie de ces données : il est donc partagé sous la même licence.
+- Ce projet est réalisé à des fins pédagogiques et non commerciales. Les requêtes SQL, les mesures DAX et les textes d'analyse sont le travail de l'auteur du projet.
